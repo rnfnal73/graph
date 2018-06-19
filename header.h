@@ -20,6 +20,7 @@ typedef struct stack{
 	int size;
 }Stack;
 
+Vertex* cpVertex(Vertex* v); //정점을 복사해서 반환
 int checkVertex(Vertex* head, int id); //리스트에 중복인 id 있는지 확인
 Vertex* findVertex(Vertex* head, int id); //리스트에 id와 같은 노드 찾아서 반환
 void insertVertex(Vertex** head, Vertex* v); //리스트에 중복확인하고나서 tail에 노드 추가
