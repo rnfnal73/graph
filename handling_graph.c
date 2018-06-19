@@ -1,3 +1,5 @@
+#include "header.h"
+
 int checkVertex(Vertex* head, int id){            //리스트에 중복인 id 있는지 확인
 	Vertex* p=head;
 	while(p!=NULL){
