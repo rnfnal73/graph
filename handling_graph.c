@@ -1,5 +1,20 @@
 #include "header.h"
 
+Vertex* cpVertex(Vertex* v){
+	Vertex* p=(Vertex*)malloc(sizefo(Vertex));
+	int i=0;
+	p->id=v->id;
+	p->size_final=v->size_final;
+	for(i=0;i<v->size_from;i++){
+		addArrayF(p);
+		p->from[i]=v->from[i];
+	}
+	for(i=0;i<v->size_to;i++){
+		addArrayT(p);
+		p->to[i]=v->to[i];
+	}
+	return p;
+}
 int checkVertex(Vertex* head, int id){            //리스트에 중복인 id 있는지 확인
 	Vertex* p=head;
 	while(p!=NULL){
