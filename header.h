@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <malloc.h>
+#include <string.h>
+
 typedef struct vertex{
         int id,size_to,size_from,size_final;
         int* to,*from,*final;
